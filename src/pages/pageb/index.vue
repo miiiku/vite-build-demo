@@ -4,11 +4,11 @@
 
 <script lang="ts">
 
-// import ElStyle from "../../components/ElStyle.css"
+import ElStyle from "../../components/ElStyle.css"
 
 // const ElStyle = import.meta.glob("../../components/ElStyle.css")
 
-const ElStyle = import.meta.glob("../../components/ElStyle.css", { eager: true })
+// const ElStyle = import.meta.glob("../../components/ElStyle.css", { eager: true })
 
 export default {
   async mounted() {
@@ -16,12 +16,13 @@ export default {
     console.log(ElStyle)
 
     // const keys = Object.keys(ElStyle)
+    // console.log(ElStyle[keys[0]])
     // ElStyle[keys[0]]().then((data: any) => {
-    //   console.log(data.default)
+    //   console.log(data)
     // })
 
-    const keys = Object.keys(ElStyle)
-    console.log((ElStyle[keys[0]] as any).default)
+    // const keys = Object.keys(ElStyle)
+    // console.log((ElStyle[keys[0]] as any).default)
   }
 }
 
